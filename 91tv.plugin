@@ -5,9 +5,9 @@
 #!icon=https://raw.githubusercontent.com/deezertidal/private/main/icons/fileball.png
 
 [Script]
+http-response ^https?:\/\/api\.revenuecat\.com\/v1\/(receipts|subscribers\/\$RCAnonymousID%3A\w{32})$ requires-body=1,script-path=https://raw.githubusercontent.com/89996462/Quantumult-X/main/ycdz/fileball.js
 
-http-response ^https:\/\/api\.jtshuzhiwa\.com\/m_user\/info requires-header=1,script-path=https://raw.githubusercontent.com/89996462/Quantumult-X/main/ycdz/91tv.js
+#!^https?:\/\/api\.revenuecat\.com\/v1\/(receipts|subscribers\/\$RCAnonymousID%3A\w{32})$ url script-response-body https://raw.githubusercontent.com/89996462/Quantumult-X/main/ycdz/fileball.js
 
-[MITM]
-
-hostname = api.jtshuzhiwa.com
+[MITM] 
+hostname = api.revenuecat.com
